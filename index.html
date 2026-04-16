@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PK Service</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background:#f5f7fb;
+  color:#333;
+}
+
+/* HEADER */
+header{
+  background:linear-gradient(135deg,#4facfe,#00f2fe);
+  color:#fff;
+  padding:20px 50px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+header h1{
+  font-size:24px;
+}
+
+nav a{
+  color:#fff;
+  margin-left:20px;
+  text-decoration:none;
+  font-weight:500;
+}
+
+/* HERO */
+.hero{
+  background:linear-gradient(135deg,#667eea,#764ba2);
+  color:#fff;
+  text-align:center;
+  padding:80px 20px;
+}
+
+.hero h2{
+  font-size:40px;
+  margin-bottom:10px;
+}
+
+.hero p{
+  font-size:18px;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 25px;
+  background:#fff;
+  color:#333;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* SERVICES */
+.services{
+  padding:50px;
+  text-align:center;
+}
+
+.services h2{
+  margin-bottom:30px;
+  font-size:30px;
+}
+
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:#fff;
+  padding:20px;
+  border-radius:15px;
+  box-shadow:0 10px 20px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+.card img{
+  width:100%;
+  height:150px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+.card h3{
+  margin:15px 0 10px;
+}
+
+/* SECTION COLORS */
+.mobile{background:linear-gradient(135deg,#ff9a9e,#fad0c4);}
+.laptop{background:linear-gradient(135deg,#a18cd1,#fbc2eb);}
+.tv{background:linear-gradient(135deg,#fbc2eb,#a6c1ee);}
+.ac{background:linear-gradient(135deg,#84fab0,#8fd3f4);}
+.fridge{background:linear-gradient(135deg,#cfd9df,#e2ebf0);}
+.wash{background:linear-gradient(135deg,#f6d365,#fda085);}
+.kitchen{background:linear-gradient(135deg,#ffecd2,#fcb69f);}
+
+/* CONTACT */
+.contact{
+  background:linear-gradient(135deg,#43e97b,#38f9d7);
+  color:#fff;
+  padding:50px;
+  text-align:center;
+}
+#s{
+  color: red;
+}
+
+footer{
+  background:#222;
+  color:#fff;
+  text-align:center;
+  padding:15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1><span id="s">PK</span> Service Center</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Fast & Reliable Appliance Repair</h2>
+  <p>Doorstep service for all your electronics & home appliances</p>
+  <a href="#" class="btn">Book Now</a>
+</section>
+
+<section class="services">
+  <h2>Our Services</h2>
+
+  <div class="service-grid">
+
+    <div class="card mobile">
+      <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9">
+      <h3>Mobile Service</h3>
+      <p>Display, battery, charging, speaker, mic, water damage & more.</p>
+    </div>
+
+    <div class="card laptop">
+      <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8">
+      <h3>Laptop Service</h3>
+      <p>Display, keyboard, battery, Windows, sound & motherboard issues.</p>
+    </div>
+
+    <div class="card tv">
+      <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1">
+      <h3>LED TV Service</h3>
+      <p>Display fault, sound issues, power problems & repair.</p>
+    </div>
+
+    <div class="card ac">
+      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952">
+      <h3>AC Service</h3>
+      <p>No cooling, gas refill, cleaning & installation.</p>
+    </div>
+
+    <div class="card fridge">
+      <img src="fr.webp">
+      <h3>Fridge Service</h3>
+      <p>No cooling, compressor issues & maintenance.</p>
+    </div>
+
+    <div class="card wash">
+      <img src="opp.jpg">
+      <h3>Washing Machine</h3>
+      <p>Drum, leakage, motor & power issues.</p>
+    </div>
+
+    <div class="card kitchen">
+      <img src="pp.jpg">
+      <h3>Kitchen Appliances</h3>
+      <p>Grinder, mixer, induction stove & gas stove repair.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="contact">
+  <h2>Contact Us</h2>
+  <p>📞 +91 9994468264</p>
+  <p>📍 Chennai, Tamil Nadu</p>
+  <p>📧 PKpushpa56@email.com</p>
+</section>
+
+<footer>
+  <p>© 2026 Service Center | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
