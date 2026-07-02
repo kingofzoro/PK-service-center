@@ -1,0 +1,227 @@
+import heroImg from './assets/e-com.webp'
+import surImg from './assets/surya.jpeg'
+import portImg from'./assets/port.webp'
+import todImg from'./assets/todo.png'
+import chaImg from'./assets/chat.webp'
+function App(){
+  return(
+    
+    <div
+      style={{
+        minHeight: "100vh",
+        background:
+          "linear-gradient(135deg,#000000,#0f172a,#1e3a8a,#7c3aed,#06b6d4)",
+        color: "white",
+        padding: "30px",
+        fontFamily: "Segoe UI",
+        scrollBehavior:"smooth"
+      }}
+    >
+
+      {/* Navbar */}
+
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+        
+          cursor:"pointer"
+        }}
+      >
+         <h1>🤖 V surya</h1>
+
+        <div style={{ display: "flex", gap: "20px", cursor: "pointer" }}>
+          <span onClick={() => document.getElementById("home").scrollIntoView({ behavior: "smooth" })}>
+            Home
+          </span>
+
+          <span onClick={() => document.getElementById("about").scrollIntoView({ behavior: "smooth" })}>
+            About
+          </span>
+
+          <span onClick={() => document.getElementById("skill").scrollIntoView({ behavior: "smooth" })}>
+            Skill
+          </span>
+
+          <span onClick={() => document.getElementById("project").scrollIntoView({ behavior: "smooth" })}>
+            Project
+          </span>
+
+          <span onClick={() => document.getElementById("contact").scrollIntoView({ behavior: "smooth" })}>
+            Contact
+          </span>
+        </div>
+      </div>
+      <div
+       style={{
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    padding: "80px",
+    color: "yellow",
+    flexWrap: "wrap"
+  }}>
+    <diV id="home">
+        <h1>Hi I'm Surya</h1>
+        <h2>I'm FullStack Devloper</h2>
+        <h3>Fresher</h3>
+        <button>Downlad CV</button>
+      
+    </diV>
+   <div>
+    <img
+      src={surImg}
+      alt="profile"
+      width={300}
+      height={300}
+      style={{
+        borderRadius: "50%",
+        objectFit: "cover",
+        border: "4px solid white"
+      }}></img>
+    </div>
+  </div>
+      <div id='about'
+      style={{
+     
+        textAlign:"center",
+        borderRadius:"20px",
+       border:"1px solid blue",
+        boxShadow:"1px 1px 5px 1px"
+      }}>
+<h1 style={{color:"black"}}>About Me</h1>
+<p>I'm a passionate Full Stack Developer with experience building modern, scalable, and user-friendly web applications. I enjoy transforming ideas into functional digital products by working across both frontend and backend technologies.
+
+My expertise includes developing responsive user interfaces, designing RESTful APIs, managing databases, and implementing secure, efficient application architectures. I continuously explore new technologies and best practices to improve performance, user experience, and code quality.
+
+I thrive on solving complex problems, learning new skills, and collaborating with teams to deliver high-quality software solutions. My goal is to create impactful applications that provide real value to users and businesses.
+
+Tech Stack: JavaScript, TypeScript, React, Next.js, Node.js, Express.js, MongoDB, MySQL, PostgreSQL, Git, and cloud-based deployment platforms.</p>
+
+      </div>
+      <div id='skill'
+      style={{
+        
+        textAlign:"center",
+        justifyContent:"space-around"
+      }}>
+     
+        <h1>Skill</h1>
+        <button style={{padding:"10px",
+          borderRadius:"10px",background:"red"
+        }}>
+          HTML</button>
+
+        <button style={{padding:"10px",
+          borderRadius:"10px",background:"cyan"
+          }}>
+            CSS</button>
+        <button style={{padding:"10px",
+          borderRadius:"10px",background:"yellow"
+          }}>
+            JAVASCRIPT</button>
+        <button style={{padding:"10px",
+          borderRadius:"10px",color:"red"
+          }}>
+            JAVA</button>
+        <button style={{padding:"10px",
+          borderRadius:"10px",background:"blue"
+          }}
+          >REACT</button>
+        
+          <button style={{padding:"10px",
+          borderRadius:"10px",background:"gray"
+          }}
+          >MySql</button>
+      </div>
+      <h1 style={{textAlign:"center",margin:"20px"}}>Projects</h1>
+      <div id='project'
+      
+        style={{
+          display: "flex",
+          gap: "20px",
+          marginTop: "40px",
+          flexWrap: "wrap",
+          textAlign:"center"
+        }}>
+      
+        <div 
+        style={card}>
+        <img src={heroImg} alt="profile" width={300} height={200}/>
+          <h2>E-comerce website</h2>
+          <button style={{borderRadius:"10px",padding:"10px 20px",background:"blue"}}>click</button>
+         
+        </div>
+
+        <div style={card}>
+           <img src={portImg} alt="profile" width={300} height={200}/>
+          <h2>Portfolio</h2>
+          <button style={{borderRadius:"10px",padding:"10px 20px",background:"blue"}}>click</button>
+          
+         
+        </div>
+
+        <div style={card}>
+           <img src={todImg} alt="profile" width={300} height={200}/>
+          <h2>To-do-App</h2>
+          <button style={{borderRadius:"10px",padding:"10px 20px",background:"blue"}}>click</button>
+          
+         
+        </div>
+
+        <div style={card}>
+           <img src={chaImg} alt="profile" width={300} height={200}/>
+          <h2>Chatt-Appp</h2>
+          <button style={{borderRadius:"10px",padding:"10px 20px",background:"blue"}}>click</button>
+          
+          
+        </div>
+
+      </div><br></br>
+     <div id='contact'style={{ textAlign: "center",borderRadius:"20px",border:"1px solid",display:"block",width:"400px",alignItems:"center",justifyContent:"center" }}>
+  <h2>Contact</h2>
+  <input type="text"placeholder="Email" style={{
+    padding:"10px",
+    margin:"20px",
+    borderRadius:"10px"
+  }}></input><br></br>
+
+  <textarea
+    placeholder="Type your message..."
+    rows="4"
+    cols="30"
+    style={{
+      padding: "10px",
+      borderRadius: "10px",
+      border: "1px solid gray"
+    }}
+  />
+
+  <br /><br />
+
+  <button
+    style={{
+      padding: "10px 20px",
+      borderRadius: "10px",
+      background: "blue",
+      color: "white"
+    }}
+  >
+    Send
+  </button>
+</div>
+      </div>
+      );
+      }
+export default App;
+
+const card={
+ flex: 1,
+ color:"black",
+  minWidth: "220px",
+  padding: "55px",
+  borderRadius: "20px",
+  textAlign: "center",
+  border:"2px solid black",
+  background: "white"}
